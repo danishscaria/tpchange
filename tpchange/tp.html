@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/style.css" rel="stylesheet">
+  <script src="/script.js"></script>
+</head>
+<body>
+    <section>
+       <div class="logo">
+        <div>
+      <img src="photo/Screenshot 2023-03-19 105650.png" style="padding-left: 30px;">
+      <div style="float: right;">
+        <img src="photo/Screenshot 2023-03-19 105701.png" style="padding-right: 35px;">
+    </div>
+        </div>
+       </div>
+    </section>
+    <section>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><span class="arrow"></span>Multimini 8</button>
+            <div id="myDropdown" class="dropdown-content">
+              
+              <table id="myGridTable">
+                <thead>
+                  <tr><td><h4 class="pump">Pump-1</h4></td><td><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label></td><td><h4 class="temp">Enter temperature:  </h4> </td><td><input class="inputbox" type="text" id="ip2"/></td></tr>
+                </thead>
+                <thead>
+                  <tr><td><h4 class="pump">Pump-2</h4></td><td><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label></td><td><h4 class="temp">Enter temperature:  </h4> </td><td><input class="inputbox" type="text" id="ip3"/></td></tr>
+                </thead>
+                <thead>
+                  <tr><td><h4 class="pump">Pump-3</h4></td><td><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label></td><td><h4 class="temp">Enter temperature:  </h4> </td><td><input class="inputbox" type="text" id="ip4"/></td></tr>
+                </thead>
+                <thead>
+                  <tr><td><h4 class="pump">Pump-4</h4></td><td><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label></td><td><h4 class="temp">Enter temperature:  </h4> </td><td><input class="inputbox" type="text" id="ip5"/></td></tr>
+                </thead>
+                <thead>
+                  <tr><td><h4 class="pump">Pump-5</h4></td><td><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label></td><td><h4 class="temp">Enter temperature:  </h4> </td><td><input class="inputbox" type="text" id="ip6"/></td></tr>
+                </thead>
+                <thead>
+                  <tr><td><h4 class="pump">Pump-6</h4></td><td><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label></td><td><h4 class="temp">Enter temperature:  </h4> </td><td><input class="inputbox" id='ip7' type="text" /></td><td>
+                    <button  onclick="ClearFields()"class="btn">Clean All</button></td></tr>
+                </thead>
+              </table>
+            </div>
+          </div> 
+    </section>
+
+
+    <section>
+      <div class="dropdownfilter">
+          <button onclick="myFunctionfilter()" class="dropbtnfilter"><span class="arrowfilter"></span>Filter Sampler</button>
+          <div id="myDropdownfilter" class="dropdown-contentfilter">
+            
+            <table id="myGridTable">
+              <thead>
+                <tr><td><h4 class="pump">Pump-1</h4></td><td><label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label></td><td><h4 class="temp">Enter temperature:  </h4> </td><td><input class="inputbox" type="text" id="ip8"/></td></tr>
+              </thead>
+              <thead>
+                <tr><td><h4 class="pump">Pump-2</h4></td><td><label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label></td><td><h4 class="temp">Enter temperature:  </h4> </td><td><input class="inputbox" type="text" id="ip9"/></td></tr>
+              </thead>
+              <thead>
+                <tr><td><h4 class="pump">Pump-3</h4></td><td><label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label></td><td><h4 class="temp">Enter temperature:  </h4> </td><td><input class="inputbox" type="text" id="ip10"/></td></tr>
+              </thead>
+              <thead>
+                <tr><td><h4 class="pump">Pump-4</h4></td><td><label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label></td><td><h4 class="temp">Enter temperature:  </h4> </td><td><input class="inputbox" type="text" id="ip11"/></td></tr>
+              </thead>
+              <thead>
+                <tr><td><h4 class="pump">Pump-5</h4></td><td><label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label></td><td><h4 class="temp">Enter temperature:  </h4> </td><td><input class="inputbox" type="text" id="ip12"/></td></tr>
+              </thead>
+              <thead>
+                <tr><td><h4 class="pump">Pump-6</h4></td><td><label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label></td><td><h4 class="temp">Enter temperature:  </h4> </td><td><input class="inputbox" id='ip13' type="text" /></td><td>
+                  <button  onclick="ClearFields()"class="btn">Clean All</button></td></tr>
+              </thead>
+            </table>
+          </div>
+        </div> 
+  </section>
+   
+
+  <section>
+    <div class="dropdownNano">
+        <button onclick="myFunctionNano()" class="dropbtnNano"><span class="arrowNano"></span>Nano Sampler</button>
+        <div id="myDropdownNano" class="dropdown-contentNano">
+          
+          <table id="myGridTable">
+            <thead>
+              <tr><td><h4 class="pump">Pump-1</h4></td><td><label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label></td><td><h4 class="temp">Enter temperature:  </h4> </td><td><input class="inputbox" type="text" id="ip14"/></td></tr>
+            </thead>
+            <thead>
+              <tr><td><h4 class="pump">Pump-2</h4></td><td><label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label></td><td><h4 class="temp">Enter temperature:  </h4> </td><td><input class="inputbox" type="text" id="ip15"/></td></tr>
+            </thead>
+            <thead>
+              <tr><td><h4 class="pump">Pump-3</h4></td><td><label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label></td><td><h4 class="temp">Enter temperature:  </h4> </td><td><input class="inputbox" type="text" id="ip16"/></td></tr>
+            </thead>
+            <thead>
+              <tr><td><h4 class="pump">Pump-4</h4></td><td><label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label></td><td><h4 class="temp">Enter temperature:  </h4> </td><td><input class="inputbox" type="text" id="ip17"/></td></tr>
+            </thead>
+            <thead>
+              <tr><td><h4 class="pump">Pump-5</h4></td><td><label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label></td><td><h4 class="temp">Enter temperature:  </h4> </td><td><input class="inputbox" type="text" id="ip18"/></td></tr>
+            </thead>
+            <thead>
+              <tr><td><h4 class="pump">Pump-6</h4></td><td><label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label></td><td><h4 class="temp">Enter temperature:  </h4> </td><td><input class="inputbox" id='ip19' type="text" /></td><td>
+                <button  onclick="ClearFields()"class="btn">Clean All</button></td></tr>
+            </thead>
+          </table>
+        </div>
+      </div> 
+</section>
+
+
+</body>
+</html>
